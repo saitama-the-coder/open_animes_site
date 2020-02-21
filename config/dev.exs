@@ -4,7 +4,7 @@ use Mix.Config
 config :open_animes_site, OpenAnimesSite.Repo,
   username: "postgres",
   password: "postgres",
-  database: "open_animes_site_dev",
+  database: "open_animes_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
