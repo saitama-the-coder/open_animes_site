@@ -4,7 +4,7 @@ use Mix.Config
 config :open_animes_site, OpenAnimesSite.Repo,
   username: "postgres",
   password: "postgres",
-  database: "open_animes_site_test",
+  database: "open_animes_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
