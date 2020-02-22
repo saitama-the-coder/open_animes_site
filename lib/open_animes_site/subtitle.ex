@@ -6,6 +6,7 @@ defmodule OpenAnimesSite.Subtitle do
     field :content, :string
     field :language, :string
     field :language_code, :string
+    field :video_quality, :string
     field :episode_id, :id
 
     timestamps()
@@ -14,7 +15,7 @@ defmodule OpenAnimesSite.Subtitle do
   @doc false
   def changeset(subtitle, attrs) do
     subtitle
-    |> cast(attrs, [:language, :language_code, :content])
-    |> validate_required([:language, :language_code, :content])
+    |> cast(attrs, [:language, :language_code, :content, :video_quality])
+    |> validate_required([:language, :language_code, :content, :video_quality])
   end
 end
