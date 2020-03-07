@@ -7,16 +7,13 @@
 # General application configuration
 use Mix.Config
 
-config :open_animes_site,
-  ecto_repos: [OpenAnimesSite.Repo]
-
 # Configures the endpoint
 config :open_animes_site, OpenAnimesSiteWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Cr7kRkqgpwmWuWZTf3agyhtrObZ2TLWW3E0L5LwKgBWXjgO2AH3X0EIxJQ92W79l",
+  secret_key_base: "Dag3MZNFWDMtKD0DZJKbacAtBkyezw7UaN7RHrHIQYVVfrDJNznRl/r32jinvqfD",
   render_errors: [view: OpenAnimesSiteWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: OpenAnimesSite.PubSub, adapter: Phoenix.PubSub.PG2],
-  live_view: [signing_salt: "7+Ep4knJ"]
+  live_view: [signing_salt: "I7lRBLLj"]
 
 # Configures Elixir's Logger
 config :logger, :console,

@@ -8,8 +8,6 @@ defmodule OpenAnimesSite.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Start the Ecto repository
-      OpenAnimesSite.Repo,
       # Start the endpoint when the application starts
       OpenAnimesSiteWeb.Endpoint
       # Starts a worker by calling: OpenAnimesSite.Worker.start_link(arg)
