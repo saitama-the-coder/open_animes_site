@@ -7,7 +7,7 @@ defmodule OpenAnimesSiteWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_open_animes_site_key",
-    signing_salt: "tT00sCll"
+    signing_salt: "3G6zx4sK"
   ]
 
   socket "/socket", OpenAnimesSiteWeb.UserSocket,
